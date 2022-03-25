@@ -1,4 +1,3 @@
-
 const readline = require('readline');
 
 /* Passing .json file into javascript*/
