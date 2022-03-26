@@ -9,3 +9,5 @@ Please download .json file before running code and change the direction to it in
 My idea was converting the data from .json into an array and use .map to return specific parameter/index. 
 
 `function removeDuplicates(keys)` was implemented to remove duplicates from original array of translation keys. Since few countries have some specific keys, usage of `[0]` to get keys from first country was not a good idea. 
+
+The code was formatted using "eslint" standarts. 
