@@ -4,7 +4,9 @@ Solution to the programming interview question. For the language I chosed Javasc
 
 To run the program:  
 1.Please clone this repository on your local machine.
+
 2.Access the cloned repository.
+
 3.Execute `node main.js {{translationKey}}`, where `translationKey` = `['cym','deu','fra','hrv','ita','jpn','nld','por','rus','spa']`. 
 
 NOTES:
