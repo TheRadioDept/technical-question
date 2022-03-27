@@ -1,6 +1,6 @@
 
 /* Passing .json file into javascript*/
-const data = require('../JS/countries.json');
+const data = require('./countries.json');
 
 /* creating an array of translation keys */
 const keys = [];
