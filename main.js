@@ -1,4 +1,3 @@
-const readline = require('readline');
 
 /* Passing .json file into javascript*/
 const data = require('../JS/countries.json');
@@ -12,7 +11,7 @@ data.forEach((element) => {
 });
 
 /**
- * Removes all duplicate translation keys
+ *Removes all duplicate translation keys
  *@param {1} keys of translation keys
  *@return {unique} a unique array of translation keys
 */
@@ -25,22 +24,16 @@ function removeDuplicates(keys) {
   });
   return unique;
 }
+/* Using terminal parameter as an argument and store it inside an array */
+const enteredKey = process.argv.slice(2);
+console.log('Key is : ', enteredKey);
 
-console.log('Supported translation keys: \n' + removeDuplicates(keys));
-
-/* creating an interface for user's input. */
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout});
-
-// Requesting User to enter the translation key
-rl.question('Please enter the translation key to see countries names: ', (translationKey) => {
 /* Checking if entered translation key is supported by.json file.*/
-  if (removeDuplicates(keys).includes(translationKey)) {
-    /* printing every country name depend on the entered translation key. */
-    console.log(data.map(point=>point.translations[translationKey].official)); }
-  else {
-    console.log('Translation key is not supported.');
-  }
-  rl.close();
-});
+if (removeDuplicates(keys).includes(enteredKey[0])) {
+  /* printing every country name depend on the entered translation key. */
+  console.log(data.map(point=>point.translations[enteredKey].official)); }
+else {
+  console.log('Translation key is not supported.');
+}
+
+
