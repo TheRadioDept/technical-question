@@ -31,6 +31,7 @@ console.log('Key is : ', enteredKey);
 /* Checking if entered translation key is supported by.json file.*/
 try {
   console.log(data.map(point => point.translations[enteredKey] ? point.translations[enteredKey].official: `No translation for ${enteredKey}.`));
+} catch (error) {
   if (enteredKey == null) {
     console.log("Cannot translate variable")
   } else {
