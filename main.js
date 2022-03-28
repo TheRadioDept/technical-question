@@ -30,8 +30,7 @@ console.log('Key is : ', enteredKey);
 
 /* Checking if entered translation key is supported by.json file.*/
 try {
-   console.log(data.map(point=>point.translations[enteredKey.map(point=>point.official)])); }
-} catch (error) {
+  console.log(data.map(point => point.translations[enteredKey] ? point.translations[enteredKey].official: `No translation for ${enteredKey}.`));
   if (enteredKey == null) {
     console.log("Cannot translate variable")
   } else {
