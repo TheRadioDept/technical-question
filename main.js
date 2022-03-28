@@ -1,5 +1,3 @@
-
-/* Passing .json file into javascript*/
 const data = require('./countries.json');
 
 /* creating an array of translation keys */
@@ -30,12 +28,16 @@ console.log('Key is : ', enteredKey);
 
 /* Checking if entered translation key is supported by.json file.*/
 try {
-  console.log(data.map(point => point.translations[enteredKey] ? point.translations[enteredKey].official: `No translation for ${enteredKey}.`));
-} catch (error) {
-  if (enteredKey == null) {
-    console.log("Key cannot be empty");
-  } else {
-     console.log("Cannot translate variable")
+  if (removeDuplicates(keys).includes(enteredKey[0])){ 
+    console.log(data.map(point => point.translations[enteredKey] ? point.translations[enteredKey].official: `No translation for ${enteredKey}.`));
+  } else { 
+    console.log("Translation key is not supported");
   }
-}
- 
+} catch (error) {
+    console.log("Cannot translate variable")
+  }
+
+
+
+
+
