@@ -33,9 +33,9 @@ try {
   console.log(data.map(point => point.translations[enteredKey] ? point.translations[enteredKey].official: `No translation for ${enteredKey}.`));
 } catch (error) {
   if (enteredKey == null) {
-    console.log("Cannot translate variable")
-  } else {
     console.log("Key cannot be empty");
+  } else {
+     console.log("Cannot translate variable")
   }
 }
-
+ 
