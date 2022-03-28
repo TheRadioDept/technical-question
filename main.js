@@ -29,11 +29,13 @@ const enteredKey = process.argv.slice(2);
 console.log('Key is : ', enteredKey);
 
 /* Checking if entered translation key is supported by.json file.*/
-if (removeDuplicates(keys).includes(enteredKey[0])) {
-  /* printing every country name depend on the entered translation key. */
-  console.log(data.map(point=>point.translations[enteredKey].official)); }
-else {
-  console.log('Translation key is not supported.');
+try {
+  console.log(data.map(point=>point.translations[enteredKey].official));
+} catch (error) {
+  if (enteredKey == null) {
+    console.log("Cannot translate variable")
+  } else {
+    console.log("Key cannot be empty");
+  }
 }
-
 
