@@ -5,13 +5,11 @@
         "es2021": true
     },
     "extends": [
-        "google"
+        "standard"
     ],
     "parserOptions": {
         "ecmaVersion": "latest"
     },
     "rules": {
-        "semi": ["error", "always"],
-        "quotes": ["error", "double"]
     }
 }
