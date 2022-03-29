@@ -40,4 +40,6 @@ if (enteredKey.length < 2 && enteredKey !== null && removeDuplicates(keys).inclu
   } catch (error) {
     console.log('Cannot translate variable');
   }
+} else {
+  console.log('Incorrect format or key, please try again.');
 }
