@@ -26,14 +26,18 @@ function removeDuplicates(keys) {
 const enteredKey = process.argv.slice(2);
 console.log('Key is : ', enteredKey);
 
-/* Checking if entered translation key is supported by.json file.*/
-try {
-  if (removeDuplicates(keys).includes(enteredKey[0])) {
-    console.log(data.map(point => point.translations[enteredKey]
-      ? point.translations[enteredKey].official: `No translation for ${enteredKey}.`));
-  } else {
-    console.log('Translation key is not supported');
+/* Checking if number of parameters more than 0 */
+/* Checking if entered translation key is supported by.json file. */
+// eslint-disable-next-line max-len
+if (enteredKey.length < 2 && enteredKey !== null && removeDuplicates(keys).includes(enteredKey[0])) {
+  try {
+    for (const {translations} of data) {
+      const value = translations[enteredKey]?.official;
+      if (value) {
+        console.log(value);
+      }
+    }
+  } catch (error) {
+    console.log('Cannot translate variable');
   }
-} catch (error) {
-  console.log('Cannot translate variable');
 }
