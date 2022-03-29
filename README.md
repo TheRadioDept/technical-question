@@ -42,7 +42,7 @@ To test "eslint", please execute `npm run eslint`.
 
 1. You can install "eslint" by executing following command in your terminal : `npm install eslint --save-dev`
 2. Execute `npm init @eslint/config` to configure "eslint" usage in your project. 
-3. Execute `npx eslint yourCode.js` to run it. 
+3. Execute `npx eslint yourCode.js`  or `./node_modules/.bin/eslint yourCode.js` to run it. 
 
 
 
