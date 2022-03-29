@@ -1,12 +1,24 @@
 # technical question
+# Introduction
 
-<b>HI</b>
+Technical solution for an interview question provided by Kalvad. Co.
 
+## Execution
 
+ 1. First, you need to clone this repository to your local machine. 
 
+```bash
+git clone https://github.com/TheRadioDept/technical-question.git
+```
+2. Access cloned repository to work with it. 
 
-
-
+```bash
+cd technical-question
+```
+3. Execute program. 
+```bash
+node main.js {{parameter}} 
+```
 
 
 
