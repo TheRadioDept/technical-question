@@ -1,0 +1,28 @@
+{
+  "name": "technical-solution",
+  "version": "1.0.0",
+  "description": "solution for tech interview",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js deu"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheRadioDept/technical-question.git"
+  },
+  "keywords": [
+    "javascript",
+    "node.js",
+    "json"
+  ],
+  "author": "Farkhad Maratov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheRadioDept/technical-question/issues"
+  },
+  "homepage": "https://github.com/TheRadioDept/technical-question#readme",
+  "devDependencies": {
+    "eslint": "^8.12.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}

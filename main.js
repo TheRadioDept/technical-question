@@ -28,16 +28,12 @@ console.log('Key is : ', enteredKey);
 
 /* Checking if entered translation key is supported by.json file.*/
 try {
-  if (removeDuplicates(keys).includes(enteredKey[0])){ 
-    console.log(data.map(point => point.translations[enteredKey] ? point.translations[enteredKey].official: `No translation for ${enteredKey}.`));
-  } else { 
-    console.log("Translation key is not supported");
+  if (removeDuplicates(keys).includes(enteredKey[0])) {
+    console.log(data.map(point => point.translations[enteredKey]
+      ? point.translations[enteredKey].official: `No translation for ${enteredKey}.`));
+  } else {
+    console.log('Translation key is not supported');
   }
 } catch (error) {
-    console.log("Cannot translate variable")
-  }
-
-
-
-
-
+  console.log('Cannot translate variable');
+}
