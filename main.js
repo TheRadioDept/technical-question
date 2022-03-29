@@ -5,17 +5,17 @@ const keys = [];
 data.forEach((element) => {
   Object.keys(element.translations).forEach((item) => {
     keys.push(item);
-  });
+   }) ;
 });
-
+ 
 /**
  *Removes all duplicate translation keys
  *@param {1} keys of translation keys
  *@return {unique} a unique array of translation keys
 */
-function removeDuplicates(keys) {
+function removeDuplicates (keys) { 
   const unique = [];
-  keys.forEach((element) => {
+          keys.forEach((element) => {
     if (!unique.includes(element)) {
       unique.push(element);
     }
