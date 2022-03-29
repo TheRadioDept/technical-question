@@ -32,14 +32,14 @@ console.log('Key is : ', enteredKey);
 if (enteredKey.length < 2 && enteredKey !== null && removeDuplicates(keys).includes(enteredKey[0])) {
   try {
     for (const {translations} of data) {
-      const value = translations[enteredKey]?.official;
-      if (value) {
-        console.log(value);
+      const key = translations[enteredKey]?.official;
+      if (key) {
+        console.log(key);
       }
     }
   } catch (error) {
     console.log('Cannot translate variable');
   }
 } else {
-  console.log('Incorrect format or key, please try again.');
+  console.log('Incorrect fosrmat or key, please try again.');
 }
