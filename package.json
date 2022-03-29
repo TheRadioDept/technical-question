@@ -4,7 +4,8 @@
   "description": "solution for tech interview",
   "main": "main.js",
   "scripts": {
-    "test": "node main.js deu"
+    "test": "node main.js deu",
+    "eslint": "npm init @eslint/config"
   },
   "repository": {
     "type": "git",
