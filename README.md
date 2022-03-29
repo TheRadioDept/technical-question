@@ -1,4 +1,26 @@
 # technical question
+
+<b>HI</b>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Solution for the technical interview question
 Solution to the programming interview question. For the language I chose Javascript. Json file was parsed as an array into the array.
 
