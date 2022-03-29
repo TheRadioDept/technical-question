@@ -5,8 +5,7 @@
   "main": "main.js",
   "scripts": {
     "test": "node main.js deu",
-    "eslint": "npm init @eslint/config",
-    "lint": "eslint ."
+    "eslint1": "npx eslint main.js"
   },
   "repository": {
     "type": "git",
