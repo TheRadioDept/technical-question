@@ -28,7 +28,7 @@ console.log('Key is : ', enteredKey);
 
 /* Checking if number of parameters more than 0 */
 /* Checking if entered translation key is supported by.json file. */
-// eslint-disable-next-line max-len
+/* eslint-disable-next-line max-len */
 if (enteredKey.length < 2 && enteredKey !== null && removeDuplicates(keys).includes(enteredKey[0])) {
   try {
     for (const {translations} of data) {
